@@ -1,38 +1,39 @@
-#ÕÅ¼Îçâ
-#×Ô61
-#2016011528
-#2018/12/1
+#  ä¸‰ç»´å›¾åƒå¤„ç†ä¹‹ç®¡çŠ¶åŠ¨è„‰éª¨æ¶æå–
+## å¼ å˜‰ç®
+## è‡ª61
 
-½Å±¾ËµÃ÷£º
-              BifucationAndEndPoint.m£º¼ì²âÏ¸»¯ºóµÄÍ¼ÏñµÄ·Ö²æµã¡¢¶Ëµã¡¢Ïßµã
-              ConnectionPL.m£ºÁ¬½Ó : µã¡ª¡ªÏß
-              ConnectionPP.m£ºÁ¬½Ó£ºµã¡ª¡ªµã
-              coronary_refine.m£º  This function processes each probability map of coronary arteries 
+# 2018/12/1
+
+è„šæœ¬è¯´æ˜ï¼š
+              BifucationAndEndPoint.mï¼šæ£€æµ‹ç»†åŒ–åçš„å›¾åƒçš„åˆ†å‰ç‚¹ã€ç«¯ç‚¹ã€çº¿ç‚¹
+              ConnectionPL.mï¼šè¿æ¥ : ç‚¹â€”â€”çº¿
+              ConnectionPP.mï¼šè¿æ¥ï¼šç‚¹â€”â€”ç‚¹
+              coronary_refine.mï¼š  This function processes each probability map of coronary arteries 
                                                  under 'rpath'. The processing steps include but not limited to thresholding,
                                                  filling holes, thinning, detecting bifurcation or end points,
                                                  reconnecting disconnected branches, removing isolated branches, and 
                                                  obtains a coronary artery tree finally.
-               coronary_show.m£ºThis function loads existing coronary artery tree 'coro_tree', and plot 
+               coronary_show.mï¼šThis function loads existing coronary artery tree 'coro_tree', and plot 
                                                it in different color according to the ids of branches. Before sorting,
                                                the order of points in each branch is unknown, thus a scatter plot is needed.
-               DeleteBurr.m£ºÉ¾³ı¹ÂÁ¢¶ÌÏß
-               FillHole.m£ºÌî²¹¿Õ¶´
-               FinalDelete.m£º×îºóÉ¾³ıÃ»ÓĞÁ¬½ÓÆğÀ´µÄ¶ÌÏß
-               mha_read_header.m£ºFunction for reading the header of a Insight Meta-Image (.mha,.mhd) file
-               mha_read_volume.m£ºFunction for reading the volume of a Insight Meta-Image (.mha, .mhd) file
-               mha_write.m£ºsave
-               MyHitMisKn.m£ºÔÚÏ¸»¯º¯ÊıÖĞµ÷ÓÃ£¬»ñµÃ¡°»÷ÖĞÓë·ñ¡±µÄÁ½¸öºË
-               MyRot.m£ºĞı×ªº¯Êı
-               PeriodCp.m£º¸Ä½øµÄ×·×ÙËã·¨
-               WipeBurr.m£º¶ÔÏ¸»¯ºóµÄ½á¹û½øĞĞĞŞÕı/È¥³ıÃ«´Ì
+               DeleteBurr.mï¼šåˆ é™¤å­¤ç«‹çŸ­çº¿
+               FillHole.mï¼šå¡«è¡¥ç©ºæ´
+               FinalDelete.mï¼šæœ€ååˆ é™¤æ²¡æœ‰è¿æ¥èµ·æ¥çš„çŸ­çº¿
+               mha_read_header.mï¼šFunction for reading the header of a Insight Meta-Image (.mha,.mhd) file
+               mha_read_volume.mï¼šFunction for reading the volume of a Insight Meta-Image (.mha, .mhd) file
+               mha_write.mï¼šsave
+               MyHitMisKn.mï¼šåœ¨ç»†åŒ–å‡½æ•°ä¸­è°ƒç”¨ï¼Œè·å¾—â€œå‡»ä¸­ä¸å¦â€çš„ä¸¤ä¸ªæ ¸
+               MyRot.mï¼šæ—‹è½¬å‡½æ•°
+               PeriodCp.mï¼šæ”¹è¿›çš„è¿½è¸ªç®—æ³•
+               WipeBurr.mï¼šå¯¹ç»†åŒ–åçš„ç»“æœè¿›è¡Œä¿®æ­£/å»é™¤æ¯›åˆº
                
-ÎÄ¼şËµÃ÷£º
-              2016011528_ÕÅ¼Îçâ_×ÛºÏ×÷Òµ_2.pdf£ºreport
-              MHAfile£ºmhaÎÄ¼ş¼Ğ
-                             ÌØ±ğµÄ£º
-                                        Á½¸öÍ¼ÏñÊ¹ÓÃ×Ô¼ºÊµÏÖµÄÏ¸»¯º¯ÊıµÄÏ¸»¯½á¹û
-                                        img_thin_054.mat ¶ÔÓ¦ÊµÑé½á¹û Line_55_My.mat
-                                        img_thin_066.mat ¶ÔÓ¦ÊµÑé½á¹û Line_66_My.mat
+æ–‡ä»¶è¯´æ˜ï¼š
+              2016011528_å¼ å˜‰ç®_ç»¼åˆä½œä¸š_2.pdfï¼šreport
+              MHAfileï¼šmhaæ–‡ä»¶å¤¹
+                             ç‰¹åˆ«çš„ï¼š
+                                        ä¸¤ä¸ªå›¾åƒä½¿ç”¨è‡ªå·±å®ç°çš„ç»†åŒ–å‡½æ•°çš„ç»†åŒ–ç»“æœ
+                                        img_thin_054.mat å¯¹åº”å®éªŒç»“æœ Line_55_My.mat
+                                        img_thin_066.mat å¯¹åº”å®éªŒç»“æœ Line_66_My.mat
                                        
                             
 
